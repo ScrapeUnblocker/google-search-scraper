@@ -1,0 +1,23 @@
+# Secrets / local env
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Test / lint caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Scraper outputs
+*.csv
+*.json
+!package.json
+results/
