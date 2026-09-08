@@ -127,7 +127,7 @@ no network access.
 ## How it works
 
 This package calls ScrapeUnblocker's `serpApi` endpoint through the official
-[`scrapeunblocker`](https://developers.scrapeunblocker.com/sdks/python?utm_source=github&utm_medium=integration&utm_campaign=example-repos)
+[`scrapeunblocker`](https://docs.scrapeunblocker.com/sdks/python?utm_source=github&utm_medium=integration&utm_campaign=example-repos)
 Python SDK and normalises the response into typed dataclasses. Google's
 anti-bot handling, rendering, and geo-routing all happen on ScrapeUnblocker's
 side — you just get structured data.
@@ -135,8 +135,8 @@ side — you just get structured data.
 ## Links
 
 - 🌐 Product: <https://scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos>
-- 📚 Docs: <https://developers.scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos>
-- 🔧 SERP guide: <https://developers.scrapeunblocker.com/guides/serp-scraping?utm_source=github&utm_medium=integration&utm_campaign=example-repos>
+- 📚 Docs: <https://docs.scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos>
+- 🔧 SERP guide: <https://docs.scrapeunblocker.com/guides/serp-scraping?utm_source=github&utm_medium=integration&utm_campaign=example-repos>
 
 ## License
 
