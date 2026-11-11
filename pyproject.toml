@@ -7,7 +7,7 @@ name = "google-search-scraper"
 version = "0.1.0"
 description = "Scrape Google Search results as clean JSON - organic, ads, AI Overview - via ScrapeUnblocker."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "ScrapeUnblocker" }]
 keywords = ["google", "serp", "search", "web-scraping", "scraper", "scrapeunblocker"]
@@ -16,11 +16,11 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
 ]
-dependencies = ["scrapeunblocker>=0.2.0"]
+dependencies = ["scrapeunblocker>=0.18,<1"]
 
 [project.urls]
 Homepage = "https://scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos"
@@ -37,7 +37,7 @@ where = ["src"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

@@ -119,9 +119,7 @@ class GoogleSearchScraper:
                     time.sleep(self.retry_backoff * attempt)
 
     @staticmethod
-    def _normalize(
-        query: str, country: str | None, raw: dict[str, Any]
-    ) -> SearchResults:
+    def _normalize(query: str, country: str | None, raw: dict[str, Any]) -> SearchResults:
         organic = [
             OrganicResult(
                 position=int(item.get("position", idx + 1)),

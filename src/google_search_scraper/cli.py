@@ -67,8 +67,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if not os.environ.get(_ENV_KEY):
         print(
-            f"error: set {_ENV_KEY} to your ScrapeUnblocker API key "
-            "(see .env.example).",
+            f"error: set {_ENV_KEY} to your ScrapeUnblocker API key (see .env.example).",
             file=sys.stderr,
         )
         return 2

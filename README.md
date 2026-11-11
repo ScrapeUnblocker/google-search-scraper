@@ -1,7 +1,7 @@
 # google-search-scraper
 
 [![CI](https://github.com/ScrapeUnblocker/google-search-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/ScrapeUnblocker/google-search-scraper/actions/workflows/ci.yml)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **Scrape Google Search results as clean, typed JSON — organic listings, ads, the AI Overview block, and total counts — with country targeting and multi-page collection.**
@@ -55,17 +55,17 @@ google-search-scraper --help
 ```python
 from google_search_scraper import GoogleSearchScraper
 
-with GoogleSearchScraper() as scraper:          # reads SCRAPEUNBLOCKER_KEY
+with GoogleSearchScraper() as scraper:  # reads SCRAPEUNBLOCKER_KEY
     results = scraper.search("web scraping tools", country="us", pages=1)
 
-print(results.total_results)                    # ~124000
+print(results.total_results)  # ~124000
 for hit in results.organic:
     print(hit.position, hit.title, hit.url)
 
 if results.ai_overview:
     print(results.ai_overview.text)
 
-data = results.to_dict()                        # JSON-ready dict
+data = results.to_dict()  # JSON-ready dict
 ```
 
 ### Example output

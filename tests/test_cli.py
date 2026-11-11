@@ -53,9 +53,7 @@ def test_parser_defaults():
 
 
 def test_parser_flags():
-    args = cli.build_parser().parse_args(
-        ["q", "-c", "de", "-p", "2", "-f", "csv", "--include-ads"]
-    )
+    args = cli.build_parser().parse_args(["q", "-c", "de", "-p", "2", "-f", "csv", "--include-ads"])
     assert args.country == "de"
     assert args.pages == 2
     assert args.format == "csv"

@@ -82,6 +82,4 @@ class SearchResults:
         return out
 
     def to_json(self, *, indent: int | None = 2, include_raw: bool = False) -> str:
-        return json.dumps(
-            self.to_dict(include_raw=include_raw), ensure_ascii=False, indent=indent
-        )
+        return json.dumps(self.to_dict(include_raw=include_raw), ensure_ascii=False, indent=indent)
